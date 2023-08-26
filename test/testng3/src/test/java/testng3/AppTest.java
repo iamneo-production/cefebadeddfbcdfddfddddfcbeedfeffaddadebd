@@ -1,26 +1,20 @@
-package testng;
-
-//import java.net.URL;
+package testng3;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeOptions;
-//import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-//import org.junit.Test;
+
 import org.testng.annotations.Test;
 
 public class AppTest 
 {
-	//ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = null;
 	@BeforeTest
 	public void beforeTest() throws Exception {
 		
-		//driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+		
         driver.get("https://flipkart.com/");
 	}
 	@Test(priority = 1)
